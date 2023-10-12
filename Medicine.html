@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Medicine</title>
+</head>
+<body>
+    <h1>Buy Medicine</h1>
+
+    <nav class="navbar">
+      <a href="hcup.html">Home</a>
+      <a href="#about">About</a>
+      <a href="index.php">Appointment</a>
+      <a href="Medicine.html">Medicine</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+  
+    <p>Please fill out the form below to purchase medicine:</p>
+    
+    
+    <form action="medicine.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="medicine">Medicine:</label>
+        <select id="medicine" name="medicine" required>
+            <option value="medicine1">Medicine 1</option>
+            <option value="medicine2">Medicine 2</option>
+            <option value="medicine3">Medicine 3</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="shipping">Shipping Method:</label>
+        <input type="radio" id="standard" name="shipping" value="standard" checked>
+        <label for="standard">Standard Shipping</label>
+        <input type="radio" id="express" name="shipping" value="express">
+        <label for="express">Express Shipping</label><br><br>
+
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
