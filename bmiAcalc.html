@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="bmiAcalc.js"></script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <h2>For Adults</h2>
+    <form id="adultForm">
+        <label for="adultHeight">Height (in cm):</label>
+        <input type="number" id="adultHeight" step="0.01" required><br>
+
+        <label for="adultWeight">Weight (in kg):</label>
+        <input type="number" id="adultWeight" step="0.01" required><br>
+
+        <button type="button" onclick="calculateAdultBMI()">Calculate BMI</button>
+        <p id="adultResult"></p>
+        <div id="adultInstructions"></div>
+    </form>
+</body>
+</html>

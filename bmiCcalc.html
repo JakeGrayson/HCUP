@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="bmiCcalc.js"></script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <h2>For Children</h2>
+    <form id="childForm">
+        <label for="childHeight">Height (in cm):</label>
+        <input type="number" id="childHeight" step="0.01" required><br>
+
+        <label for="childWeight">Weight (in kg):</label>
+        <input type="number" id="childWeight" step="0.01" required><br>
+
+        <button type="button" onclick="calculateChildBMI()">Calculate BMI</button>
+        <p id="childResult"></p>
+        <div id="childInstructions"></div>
+    </form>
+</body>
+</html>

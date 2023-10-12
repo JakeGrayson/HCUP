@@ -1,0 +1,26 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pressure Calculator</title>
+    <link rel="stylesheet" href="bloodpressue.css">
+    <script src="bloodpressure.js"></script>
+
+</head>
+<body>
+    <h1>Blood Pressure Calculator</h1>
+    
+    <label for="systolic">Systolic Pressure (mmHg):</label>
+    <input type="number" id="systolic" placeholder="Enter systolic pressure" required><br><br>
+
+    <label for="diastolic">Diastolic Pressure (mmHg):</label>
+    <input type="number" id="diastolic" placeholder="Enter diastolic pressure" required><br><br>
+
+    <button onclick="calculateMAP()">Calculate MAP</button><br><br>
+
+    <div id="result"></div>
+</body>
+</html>
+
+
